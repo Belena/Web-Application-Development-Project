@@ -1,0 +1,97 @@
+﻿
+body {font-size: 17px; font-family:'OrangeLETPlain', Arial, Tahoma, sans-serif; min-height: 900px; line-height:1.7; word-spacing:-0.03em; letter-spacing:-0.035em; margin: 0; padding:0px; background: #faf5f0 url(images/bg.gif) repeat ; color:#000; font-family: Arial, Tahoma, sans-serif;}
+body, html {height:100%;}
+
+/*---Global tags---*/
+img {border:0;}
+form {padding:0; margin:0;
+    width: 306px;
+}
+a {color:#000; text-decoration:none; outline:0;}
+a:hover {color:#e47100; text-decoration:underline;}
+
+hr {border:0px solid #7F7F7F; border-bottom:1px solid #7F7F7F;}
+h1, h2, h3, h4, p {font-family:'OrangeLETPlain', Arial, Tahoma, sans-serif; font-style: normal;
+font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal;}
+h1 {}
+h2 {}
+h3 {color:#eb841f; font-weight:bold; margin:0; padding:0; line-height:1.4; font-size:16px; text-align:center; }
+h4 {color:#eb841f; font-weight:bold; margin:0; padding:0; line-height:1.4; font-size:14px; text-align:center; word-spacing:normal; letter-spacing:normal; }
+
+
+ul {}
+ul li {}
+
+p {margin:0; padding:15px 0; }
+fieldset {padding:0; border:none; border:0px solid #000; margin:0;}
+table {border-collapse: collapse;
+    margin-left: 3px;
+}
+textarea, input, select {font-family:Arial;}
+
+blockquote {padding:0; margin:0; }
+blockquote p:before, blockquote p:after, blockquote p .before, blockquote p .after {content:'"'; display:inline; font-size:18px; color:#eb7400; }
+blockquote p {padding:0; margin:0; }
+
+.cl {clear:both; font-size:0;}
+
+
+.container {width:1000px; height:100%; margin:0 auto; padding:0;  background: transparent url(images/header_bg.jpg) 0 0 no-repeat;}
+
+/*---top---*/
+.top {background:#eb841f; height:30px; color:#fff; line-height:1.2; position:relative;  word-spacing:normal; letter-spacing:normal; border-bottom:3px solid #fff; padding:6px 0 7px;   box-shadow:0 0 9px #e2ded9;  -moz-box-shadow:0 0 9px #e2ded9; -webkit-box-shadow:0 0 9px #e2ded9;}
+.top_inner {width:1000px; margin:0 auto; font-size:10px; text-transform:uppercase;}
+.website {font-size:18px;}
+.log  {float:right; text-align: right; text-transform:none; width:142px; font-size:18px; font-weight:bold; margin:-4px 0 0;}
+.log a {text-decoration:none; color:#fff; padding: 0 20px 0 0; background: url(images/icon.png) 100% 4px no-repeat; }
+.log a:hover {text-decoration:underline; color:#fff;}
+
+.logout  {float:right; text-transform:none; width:77px; font-size:11px; font-weight:bold; margin:0; padding:0; }
+.logout a {text-decoration:none; color:#fff; display:inline-block; border:1px solid #fff; padding:1px 6px; }
+.logout a:hover {text-decoration:underline; color:#fff;}
+.welcome  {float:right; text-transform:none; font-size:14px; margin:-2px 0 0; padding:0 41px 0 0; }
+.welcome a {text-decoration:none; color:#fff; font-weight:bold; font-size:16px; }
+.welcome a:hover {text-decoration:underline; color:#fff;}
+/*---/top---*/
+
+/*---header---*/
+.logo {float:left; padding:2px 0px 0 2px; }
+.logo img {vertical-align:middle; }
+.main_menu { list-style-type:none; margin:0 0 0 198px; padding:0; height:128px; font:30px 'OrangeLETPlain', Arial, Tahoma, sans-serif;}
+.main_menu li {float:left; position:relative; z-index:100; }
+.main_menu li:hover, .main_menu li.active {border-bottom:3px solid #fff; background: url(images/mm_active.png) 0 0 repeat; }
+.main_menu li a {display:block; height:25px; padding:53px 24px 26px 77px; }
+.main_menu li a:hover, .main_menu li.active a { color:#363636; text-decoration:none; background: url(../images/mm_arr.png) 16px 48px no-repeat; }
+
+.main_menu li ul, .orange {#e47100;}
+.main_menu li ul {  padding:0 6px; margin:0; list-style-type:none; height:auto; background: #fff; border-bottom:3px solid #000; font:13px Arial, Tahoma, sans-serif;}
+.main_menu li ul li {float:none; padding:0 0 4px; }
+.main_menu li ul li:hover {border:0; background:none; }
+.main_menu li ul li a {display:inline; height:auto; padding:0; background:none !important; }
+.main_menu li ul li a:hover {display:inline; height:auto; padding:0; color:#e47100; text-decoration:underline;}
+.sub_menu {position:absolute; display:none; font-size:13px; left:0; top:80px; width:100%; padding:30px 0 0 0;  background: url(images/mm_sub.png) 50% 0 no-repeat; }
+li:hover .sub_menu {display:block;}
+
+
+.form_scan { float:right;  width:287px; height:79px; margin:42px 50px 0 0; padding:83px 77px 0 0; text-align:right;  font-size:11px; color:#000; background: url(images/form_scan_bg.png) 0 0 no-repeat; }
+.form_scan input[type="text"] {vertical-align:middle; font-size:13px; color:#cdcdcd; border:3px solid #e8721b; background:#fff; padding:8px 4px; margin:4px 0;  text-transform:uppercase; width:242px;  -moz-border-radius:4px;  -webkit-border-radius:4px; -khtml-border-radius:4px; border-radius:4px;}
+.form_scan .btn_scan {float:right; cursor:pointer; position:relative; left:78px; width:68px; margin:0 0 0 -68px; padding:46px 0 0 0; color:#eb841f; font-weight:bold; font-size:13px; background:none;  border:0; text-align:left;  }
+.form_scan_local {float:none; width:auto; margin:0; padding:83px 96px 28px 0;   background: url(images/form_scan.png) 356px 0 no-repeat; }
+.scan_title {vertical-align:middle; margin-right:6px; font:bold 18px 'OrangeLETPlain', Arial, Tahoma, sans-serif;}
+/*---/header---*/
+
+/*---content---*/
+.main_content {width:1000px; min-height: 770px; margin:0; background: url(../images/photo_scan_bg.jpg); background-size: 1000px 740px;background-repeat: no-repeat;}
+.content {width:925px; height: 100%; padding: 70px 5px 5px 40px;}
+/*---/content---*/
+
+/*---footer---*/
+.footer {width:942px; margin:0 auto; border:3px solid #fff; background:#eaeaea;   height:60px; -moz-border-radius:4px 4px 0 0;  -webkit-border-radius:4px 4px 0 0; -khtml-border-radius:4px 4px 0 0; border-radius:4px 4px 0 0;}
+
+.footer_menu {text-align: center; margin: 0; font-size:17px; padding:0 0 5px; }
+.footer_menu a  {color:#686868; margin-right:20px;}
+.footer_menu a:hover {color:#e47100;}
+.copy  {color:#818181; font-size:13px; margin:0; text-align: right }
+.copy  a {color:#818181; font-weight:bold;}
+.copy a:hover, .orange {color:#e47100;}
+/*---/footer---*/
