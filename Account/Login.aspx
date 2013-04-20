@@ -1,49 +1,94 @@
-﻿<%@ Page Title="Log In" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="false"
-    CodeFile="Login.aspx.vb" Inherits="Account_Login" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="login.aspx.vb" Inherits="Login" %>
 
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-</asp:Content>
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Log In
-    </h2>
-    <p>
-        Please enter your username and password.
-        <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Register</asp:HyperLink> if you don't have an account.
-    </p>
-    <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false">
-        <LayoutTemplate>
-            <span class="failureNotification">
-                <asp:Literal ID="FailureText" runat="server"></asp:Literal>
-            </span>
-            <asp:ValidationSummary ID="LoginUserValidationSummary" runat="server" CssClass="failureNotification" 
-                 ValidationGroup="LoginUserValidationGroup"/>
-            <div class="accountInfo">
-                <fieldset class="login">
-                    <legend>Account Information</legend>
-                    <p>
-                        <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Username:</asp:Label>
-                        <asp:TextBox ID="UserName" runat="server" CssClass="textEntry"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" 
-                             CssClass="failureNotification" ErrorMessage="User Name is required." ToolTip="User Name is required." 
-                             ValidationGroup="LoginUserValidationGroup">*</asp:RequiredFieldValidator>
-                    </p>
-                    <p>
-                        <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
-                        <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" 
-                             CssClass="failureNotification" ErrorMessage="Password is required." ToolTip="Password is required." 
-                             ValidationGroup="LoginUserValidationGroup">*</asp:RequiredFieldValidator>
-                    </p>
-                    <p>
-                        <asp:CheckBox ID="RememberMe" runat="server"/>
-                        <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" CssClass="inline">Keep me logged in</asp:Label>
-                    </p>
-                </fieldset>
-                <p class="submitButton">
-                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="LoginUserValidationGroup"/>
-                </p>
-            </div>
-        </LayoutTemplate>
-    </asp:Login>
-</asp:Content>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   
+
+    <!--top-->
+	<div class="top"><div class="top_inner">
+		<div class="log"><a href="#">Register</a></div>
+		<div class="log">
+			<a href="Login.aspx">Log In </a>
+		</div>
+        <div class="cl"></div>
+		<span class="website"></span>
+	</div></div>
+<!--/top-->
+<div class="container">
+<!--header-->
+	<div class="header">
+		
+		<ul class="main_menu">
+			<li class="active"><a href="../Home.aspx">Home</a></li>
+			<li><a href="#">About</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+					</ul>
+				</div>
+            </li>
+			<li><a href="#">Products</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+					</ul>
+				</div>
+            </li>
+			<li><a href="#">Contacts</a></li>
+            
+		</ul>
+	</div>
+<!--/header-->
+
+<!--content-->
+	<div class="main_content">
+    <div class="content">
+
+		<form id="form1" runat="server">
+    <center><div style="height: 181px; width: 292px">
+    
+    &nbsp;
+&nbsp;
+        <asp:Login ID="Login1" runat="server" Width="296px">
+        </asp:Login>
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+            ValidationGroup="Login1" Width="295px" />
+    
+    </div>
+    </center>
+    </form>
+    </div>
+    </div>
+<!--/content-->
+<div class="cl"></div>
+</div>
+
+
+<!--footer-->
+<div class="footer">
+
+	<div class="footer_menu">
+		<a href="#">Home   <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
+	<div class="copy">
+		&copy; NCI 2013 &nbsp;&nbsp; 
+	</div>
+    </div>
+	
+</div>
+<!--/footer-->
+
+</body>
+
+</html>

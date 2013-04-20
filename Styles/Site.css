@@ -4,9 +4,8 @@ body, html {height:100%;}
 
 /*---Global tags---*/
 img {border:0;}
-form {padding:0; margin:0;
-    width: 306px;
-}
+
+
 a {color:#000; text-decoration:none; outline:0;}
 a:hover {color:#e47100; text-decoration:underline;}
 
@@ -36,11 +35,12 @@ blockquote p {padding:0; margin:0; }
 .cl {clear:both; font-size:0;}
 
 
+.main_global {min-width:1000px; min-height:100%; margin:0 0 -203px 0;}
 .container {width:1000px; height:100%; margin:0 auto; padding:0;  background: transparent url(images/header_bg.jpg) 0 0 no-repeat;}
 
 /*---top---*/
 .top {background:#eb841f; height:30px; color:#fff; line-height:1.2; position:relative;  word-spacing:normal; letter-spacing:normal; border-bottom:3px solid #fff; padding:6px 0 7px;   box-shadow:0 0 9px #e2ded9;  -moz-box-shadow:0 0 9px #e2ded9; -webkit-box-shadow:0 0 9px #e2ded9;}
-.top_inner {width:1000px; margin:0 auto; font-size:10px; text-transform:uppercase;}
+.top_inner {width:1000px; margin:0 auto; font-size:10px; }
 .website {font-size:18px;}
 .log  {float:right; text-align: right; text-transform:none; width:142px; font-size:18px; font-weight:bold; margin:-4px 0 0;}
 .log a {text-decoration:none; color:#fff; padding: 0 20px 0 0; background: url(images/icon.png) 100% 4px no-repeat; }

@@ -7,4 +7,7 @@ Partial Class Home
     End Sub
 
    
+    Protected Sub LoginView1_ViewChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles LoginView1.ViewChanged
+
+    End Sub
 End Class

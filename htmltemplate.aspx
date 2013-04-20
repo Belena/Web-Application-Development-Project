@@ -7,38 +7,49 @@
     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
 </head>
-<body>
+
+ <form id="form1" runat="server">
+<body class="main_body">
+
+<div class="main_global">
 
 
-    <form id="form1" runat="server">
+   
 
 
 <!--top-->
-	<div class="top"><div class="top_inner">
-		<asp:LoginView ID="LoginView1" runat="server">
-            <AnonymousTemplate>
-                You are not logged in. Click the Login link
-            </AnonymousTemplate>
-            <LoggedInTemplate>
-                Welcome,
-            </LoggedInTemplate>
-        </asp:LoginView>
-		<div class="log"><a href="#">Register</a></div>
+	<div class="top">
+    <div class="top_inner">
+		<div class="log"><a href="">Register</a>
+        </div>
+         
 		<div class="log">
-			<a href="#">Log In</a>
-		</div>
-		<asp:LoginName ID="LoginName1" runat="server" />
-		<asp:LoginStatus ID="LoginStatus1" runat="server" />
-		<span class="website"></span>
-	</div></div>
+
+			 <asp:LoginStatus ID="LoginStatus1" runat="server" />
+        </div>
+		
+		
+	       <asp:LoginView ID="LoginView1" runat="server">
+                <AnonymousTemplate>
+                   <span style="font-size: 15px;"> You are not logged in</span>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    Welcome,<asp:LoginName ID="LoginName1" runat="server" />
+                </LoggedInTemplate>
+            </asp:LoginView>
+          
+	</div>
+    </div>
 <!--/top-->
+<div class="main_global">
 <div class="container">
 <!--header-->
+ <div class="cl"></div>
 	<div class="header">
 		
 		<ul class="main_menu">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a>
+			<li class="active"><a href="Home.aspx">Home</a></li>
+			<li><a href="Home.aspx">About </a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
@@ -58,10 +69,11 @@
 					</ul>
 				</div>
             </li>
-			<li><a href="#">Contacts</a></li>
+			<li><a href="Home.aspx">Contacts</a></li>
             
 		</ul>
 	</div>
+    
 <!--/header-->
 
 <!--content-->
@@ -69,16 +81,13 @@
 
 	<div class="main_content">
 		<div class="content">
-
-
         
-        
-
 
         </div>
+        <div class="cl"></div>
        </div>
 <!--/content-->
-<div class="cl"></div>
+
 </div>
 
 
@@ -94,8 +103,10 @@
 	
 </div>
 <!--/footer-->
-
+</div>
+</div>
     </form>
+    <div class="cl"></div>
 
 </body>
 </html>
