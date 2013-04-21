@@ -1,4 +1,6 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Home.aspx.vb" Inherits="Home" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -56,7 +58,7 @@
 					</ul>
 				</div>
             </li>
-			<li><a href="#">Products</a>
+			<li><a href="Products.aspx">Products</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="#">Lorem ipsum dolor sit ame</a></li>

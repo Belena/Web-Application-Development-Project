@@ -9,7 +9,7 @@
     <style type="text/css">
         .style1
         {
-            width: 100%;
+            width: 215%;
         }
         .style2
         {
@@ -98,6 +98,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <span style="font-size: 13px; color: orange"><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="TextBox1" ErrorMessage="Please enter your name"></asp:RequiredFieldValidator></span>
                     </td>
                 </tr>
                 <tr>
@@ -106,6 +108,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <span style="font-size: 13px; color: orange"><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                            ControlToValidate="TextBox2" ErrorMessage="Please enter your surname"></asp:RequiredFieldValidator></span>
                     </td>
                 </tr>
                 <tr>
@@ -114,6 +118,9 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <span style="font-size: 13px; color: orange"><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                            ControlToValidate="TextBox3" 
+                            ErrorMessage="Please enter email address in correct format"></asp:RegularExpressionValidator></span>
                     </td>
                 </tr>
                 <tr>
@@ -122,6 +129,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        <span style="font-size: 13px; color: orange"><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                            ControlToValidate="TextBox4" ErrorMessage="Please, enter address"></asp:RequiredFieldValidator></span>
                     </td>
                 </tr>
                 <tr>
