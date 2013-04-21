@@ -9,7 +9,7 @@
 </head>
 <body>
    
-
+   <div class="main_global">
     <!--top-->
 	<div class="top"><div class="top_inner">
 		<div class="log"><a href="#">Register</a></div>
@@ -86,6 +86,7 @@
 	</div>
     </div>
 	
+</div>
 </div>
 <!--/footer-->
 

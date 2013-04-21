@@ -3,25 +3,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
 </head>
-
- <form id="form1" runat="server">
 <body class="main_body">
+ <form id="form1" runat="server">
+
 
 <div class="main_global">
-
-
-   
-
 
 <!--top-->
 	<div class="top">
     <div class="top_inner">
-		<div class="log"><a href="">Register</a>
-        </div>
+		
          
 		<div class="log">
 
@@ -32,16 +27,18 @@
 	       <asp:LoginView ID="LoginView1" runat="server">
                 <AnonymousTemplate>
                    <span style="font-size: 15px;"> You are not logged in</span>
+                   <div class="log"><a href="Register.aspx">Register</a>
+        </div>
                 </AnonymousTemplate>
                 <LoggedInTemplate>
-                    Welcome,<asp:LoginName ID="LoginName1" runat="server" />
-                </LoggedInTemplate>
+                   <span style="font-size: 15px;"> Welcome,<asp:LoginName ID="LoginName1" runat="server" />
+                </span></LoggedInTemplate>
             </asp:LoginView>
           
 	</div>
     </div>
 <!--/top-->
-<div class="main_global">
+
 <div class="container">
 <!--header-->
  <div class="cl"></div>
@@ -81,7 +78,8 @@
 
 	<div class="main_content">
 		<div class="content">
-        <center><h2>Welcome to our site!</h2></center>
+        
+         <center><h2>Welcome to our site!</h2></center>
 
 
           <p>Get classroom products, lesson plans, and activities, prepare for the Geographic Bee, help kids learn about the world, and more.
@@ -90,6 +88,7 @@ Classroom Resources
 School Publishing
 Locating Highest U.S. Elevations</p>
 
+        </div>
         </div>
         <div class="cl"></div>
        </div>
@@ -110,10 +109,11 @@ Locating Highest U.S. Elevations</p>
 	
 </div>
 <!--/footer-->
-</div>
-</div>
+
+
+<div class="cl"></div>
     </form>
-    <div class="cl"></div>
+    
 
 </body>
 </html>

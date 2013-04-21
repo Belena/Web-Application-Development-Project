@@ -35,7 +35,7 @@ blockquote p {padding:0; margin:0; }
 .cl {clear:both; font-size:0;}
 
 
-.main_global {min-width:1000px; min-height:100%; margin:0 0 -203px 0;}
+.main_global {min-width:1000px; min-height:100%; margin:0;}
 .container {width:1000px; height:100%; margin:0 auto; padding:0;  background: transparent url(images/header_bg.jpg) 0 0 no-repeat;}
 
 /*---top---*/
@@ -55,6 +55,7 @@ blockquote p {padding:0; margin:0; }
 /*---/top---*/
 
 /*---header---*/
+.not {font-size: 15px;}
 .logo {float:left; padding:2px 0px 0 2px; }
 .logo img {vertical-align:middle; }
 .main_menu { list-style-type:none; margin:0 0 0 198px; padding:0; height:128px; font:30px 'OrangeLETPlain', Arial, Tahoma, sans-serif;}
@@ -63,7 +64,7 @@ blockquote p {padding:0; margin:0; }
 .main_menu li a {display:block; height:25px; padding:53px 24px 26px 77px; }
 .main_menu li a:hover, .main_menu li.active a { color:#363636; text-decoration:none; background: url(../images/mm_arr.png) 16px 48px no-repeat; }
 
-.main_menu li ul, .orange {#e47100;}
+
 .main_menu li ul {  padding:0 6px; margin:0; list-style-type:none; height:auto; background: #fff; border-bottom:3px solid #000; font:13px Arial, Tahoma, sans-serif;}
 .main_menu li ul li {float:none; padding:0 0 4px; }
 .main_menu li ul li:hover {border:0; background:none; }
