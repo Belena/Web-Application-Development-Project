@@ -1,13 +1,11 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Home.aspx.vb" Inherits="Home" %>
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
-
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CustomersOrders.aspx.vb" Inherits="CustomersOrders" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+<head runat="server">
     <title></title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="main_body">
  <form id="form1" runat="server">
@@ -48,31 +46,28 @@
 		
 		<ul class="main_menu">
 			<li class="active"><a href="Home.aspx">Home</a></li>
-			
-			<li><a href="Products.aspx">Products</a>
+			<li><a href="Home.aspx">About </a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
 					</ul>
 				</div>
             </li>
-            <li><a href="AllSuppliers.aspx">Suppliers</a>
+			<li><a href="#">Products</a>
             <div class="sub_menu">
 					<ul>
-						<li><a href="dataentry.aspx">Edit Supplisers</a></li>
-						
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
 					</ul>
 				</div>
             </li>
-			<li><a href="Home.aspx">Customers</a>
-            <div class="sub_menu">
-					<ul>
-						<li><a href="../CustomersOrders.aspx">Customers' Orders</a></li>
-						
-					</ul>
-				</div>
-                </li>
+			<li><a href="Home.aspx">Contacts</a></li>
+            
 		</ul>
 	</div>
     
@@ -84,14 +79,7 @@
 	<div class="main_content">
 		<div class="content">
         
-         <center><h2>Welcome to our site!</h2></center>
-
-
-          <p>Get classroom products, lesson plans, and activities, prepare for the Geographic Bee, help kids learn about the world, and more.
-
-Classroom Resources
-School Publishing
-Locating Highest U.S. Elevations</p>
+         
 
         </div>
         </div>

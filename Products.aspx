@@ -81,7 +81,7 @@
 	<div class="main_content">
 		<div class="content">
         
-         <h1>Products:</h1> 
+        <center> <h1>Products:</h1> </center>
     
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
@@ -101,11 +101,13 @@
         <asp:Button ID="btnProductSubmit" runat="server" Text="Submit" />
     </p>
 
-    <p>
-        &nbsp;</p>
      <asp:AccessDataSource ID="ProductDataSourceRepeater" runat="server" 
         DataFile="~/App_Data/Northwind.mdb" SelectCommand="SELECT * FROM [Products]">
     </asp:AccessDataSource>
+
+        <asp:Repeater ID="productDataRepeater" runat="server" 
+        DataSourceID="ProductDataSourceRepeater">
+    </asp:Repeater>
 
    <asp:AccessDataSource ID="searchProductDataSource" runat="server" 
             DataFile="~/App_Data/Northwind.mdb" 
@@ -122,17 +124,12 @@
             </SelectParameters>
         </asp:AccessDataSource>
 
-        <br />
-        <asp:Repeater ID="productDataRepeater" runat="server" 
-        DataSourceID="ProductDataSourceRepeater">
-    </asp:Repeater>
-    <br />
-    <asp:Label ID="LabelStatusText" runat="server" Text="All Products"></asp:Label>
+   <center><asp:Label ID="LabelStatusText" runat="server" Text="All Products"></asp:Label></center>
     <br />
     Select a product if you would like to edit or delete it
 
     <br />
-    <div style="width: 100%; font-size: 14px;">
+    <div style="width: 100%; font-size: 14px; padding: 0 0 40px 0;">
     <hr />
         <asp:GridView 
         ID="ProductsGridView" 

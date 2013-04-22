@@ -1,5 +1,5 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Home.aspx.vb" Inherits="Home" %>
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+﻿<%@ Page Language="VB" AutoEventWireup="true" CodeFile="AllSuppliers.aspx.vb"
+    Inherits="AllSuppliers" %>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,7 +53,9 @@
             <div class="sub_menu">
 					<ul>
 						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
 					</ul>
 				</div>
             </li>
@@ -65,14 +67,8 @@
 					</ul>
 				</div>
             </li>
-			<li><a href="Home.aspx">Customers</a>
-            <div class="sub_menu">
-					<ul>
-						<li><a href="../CustomersOrders.aspx">Customers' Orders</a></li>
-						
-					</ul>
-				</div>
-                </li>
+			<li><a href="Home.aspx">Customers</a></li>
+            
 		</ul>
 	</div>
     
@@ -84,14 +80,9 @@
 	<div class="main_content">
 		<div class="content">
         
-         <center><h2>Welcome to our site!</h2></center>
+        <asp:GridView ID="GridView1" runat="server" Width="753px">
+        </asp:GridView>
 
-
-          <p>Get classroom products, lesson plans, and activities, prepare for the Geographic Bee, help kids learn about the world, and more.
-
-Classroom Resources
-School Publishing
-Locating Highest U.S. Elevations</p>
 
         </div>
         </div>
@@ -106,6 +97,7 @@ Locating Highest U.S. Elevations</p>
 <div class="footer">
 
 	<div class="footer_menu">
+		
 		<a href="#">Home</a>       <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
 	<div class="copy">
 		&copy; NCI 2013 &nbsp;&nbsp; 
