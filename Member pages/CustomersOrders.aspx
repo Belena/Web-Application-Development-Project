@@ -129,7 +129,10 @@
         DataSourceID="SqlDataSource2"
         Width="70%">
         <Columns>
+<<<<<<< HEAD
             <asp:CommandField ShowSelectButton="True" />
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
             <asp:BoundField DataField="OrderID" HeaderText="OrderID" 
                 SortExpression="OrderID" />
             <asp:BoundField DataField="ProductID" HeaderText="ProductID" 

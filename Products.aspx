@@ -165,7 +165,11 @@
             </asp:AccessDataSource>
 
     <br />
+<<<<<<< HEAD
     <div style="width: 100%; font-size: 13px; padding: 0 0 40px 0;">
+=======
+    <div style="width: 100%; font-size: 14px; padding: 0 0 40px 0;">
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
     <hr />
         <asp:GridView 
         ID="ProductsGridView" 
