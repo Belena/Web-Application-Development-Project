@@ -81,7 +81,7 @@
 	<div class="main_content">
 		<div class="content">
         
-         <h1>Products:</h1> 
+        <center> <h1>Products:</h1> </center>
     
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
@@ -101,11 +101,13 @@
         <asp:Button ID="btnProductSubmit" runat="server" Text="Submit" />
     </p>
 
-    <p>
-        &nbsp;</p>
      <asp:AccessDataSource ID="ProductDataSourceRepeater" runat="server" 
         DataFile="~/App_Data/Northwind.mdb" SelectCommand="SELECT * FROM [Products]">
     </asp:AccessDataSource>
+
+        <asp:Repeater ID="productDataRepeater" runat="server" 
+        DataSourceID="ProductDataSourceRepeater">
+    </asp:Repeater>
 
    <asp:AccessDataSource ID="searchProductDataSource" runat="server" 
             DataFile="~/App_Data/Northwind.mdb" 
@@ -122,17 +124,48 @@
             </SelectParameters>
         </asp:AccessDataSource>
 
-        <br />
-        <asp:Repeater ID="productDataRepeater" runat="server" 
-        DataSourceID="ProductDataSourceRepeater">
-    </asp:Repeater>
-    <br />
-    <asp:Label ID="LabelStatusText" runat="server" Text="All Products"></asp:Label>
+   <center><asp:Label ID="LabelStatusText" runat="server" Text="All Products"></asp:Label></center>
     <br />
     Select a product if you would like to edit or delete it
 
+            <br />
+            <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
+                DataFile="~/App_Data/Northwind.mdb" 
+                DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = ?" 
+                InsertCommand="INSERT INTO [Products] ([ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" 
+                SelectCommand="SELECT * FROM [Products]" 
+                UpdateCommand="UPDATE [Products] SET [ProductName] = ?, [SupplierID] = ?, [CategoryID] = ?, [QuantityPerUnit] = ?, [UnitPrice] = ?, [UnitsInStock] = ?, [UnitsOnOrder] = ?, [ReorderLevel] = ?, [Discontinued] = ? WHERE [ProductID] = ?">
+                <DeleteParameters>
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                    <asp:Parameter Name="ProductName" Type="String" />
+                    <asp:Parameter Name="SupplierID" Type="Int32" />
+                    <asp:Parameter Name="CategoryID" Type="Int32" />
+                    <asp:Parameter Name="QuantityPerUnit" Type="String" />
+                    <asp:Parameter Name="UnitPrice" Type="Decimal" />
+                    <asp:Parameter Name="UnitsInStock" Type="Int16" />
+                    <asp:Parameter Name="UnitsOnOrder" Type="Int16" />
+                    <asp:Parameter Name="ReorderLevel" Type="Int16" />
+                    <asp:Parameter Name="Discontinued" Type="Boolean" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="ProductName" Type="String" />
+                    <asp:Parameter Name="SupplierID" Type="Int32" />
+                    <asp:Parameter Name="CategoryID" Type="Int32" />
+                    <asp:Parameter Name="QuantityPerUnit" Type="String" />
+                    <asp:Parameter Name="UnitPrice" Type="Decimal" />
+                    <asp:Parameter Name="UnitsInStock" Type="Int16" />
+                    <asp:Parameter Name="UnitsOnOrder" Type="Int16" />
+                    <asp:Parameter Name="ReorderLevel" Type="Int16" />
+                    <asp:Parameter Name="Discontinued" Type="Boolean" />
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                </UpdateParameters>
+            </asp:AccessDataSource>
+
     <br />
-    <div style="width: 100%; font-size: 14px;">
+    <div style="width: 100%; font-size: 13px; padding: 0 0 40px 0;">
     <hr />
         <asp:GridView 
         ID="ProductsGridView" 
@@ -141,7 +174,7 @@
         AllowSorting="True" 
         AutoGenerateColumns="False" 
         DataKeyNames="ProductID" 
-        DataSourceID="ProductDataSourceRepeater" 
+        DataSourceID="AccessDataSource1" 
         CellPadding="2" 
         ForeColor="Black" 
         GridLines="Vertical" 
@@ -152,6 +185,8 @@
         Width="175px">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" 
+                    ShowSelectButton="True" />
                 <asp:BoundField DataField="ProductID" HeaderText="ProductID" 
                    SortExpression="ProductID" InsertVisible="False" ReadOnly="True" />
                 <asp:BoundField DataField="ProductName" HeaderText="ProductName" 
