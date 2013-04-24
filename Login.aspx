@@ -60,7 +60,7 @@
     <center><div style="height: 181px; width: 292px">
     
     &nbsp;
-        <asp:Login ID="Login1" runat="server" Width="296px">
+        <asp:Login ID="Login1" runat="server" Width="296px" CreateUserUrl="~/Home.aspx">
         </asp:Login>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
             ValidationGroup="Login1" Width="295px" />

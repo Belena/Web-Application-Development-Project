@@ -48,28 +48,33 @@
 		
 		<ul class="main_menu">
 			<li class="active"><a href="Home.aspx">Home</a></li>
-			<li><a href="Home.aspx">About </a>
-            <div class="sub_menu">
-					<ul>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-					</ul>
-				</div>
-            </li>
+			
 			<li><a href="Products.aspx">Products</a>
             <div class="sub_menu">
 					<ul>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href='Stockxml.aspx'">Current Stock (xml)</a></li>
+						
 					</ul>
 				</div>
             </li>
-			<li><a href="Home.aspx">Contacts</a></li>
-            
+            <li><a href="AllSuppliers.aspx">Suppliers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="dataentry.aspx">Edit Supplisers</a></li>
+						
+					</ul>
+				</div>
+            </li>
+			<li><a href="">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
+                        <li><a href="AddNewCustomer.aspx">Add new Customer</a></li>
+                        
+						
+					</ul>
+				</div>
+                </li>
 		</ul>
 	</div>
     
@@ -81,19 +86,73 @@
 	<div class="main_content">
 		<div class="content">
         
-         <center><h2>Welcome to our site!</h2></center>
+         <center><h2>Welcome to Inventory Manager Site!</h2></center>
 
 
-          <p>Get classroom products, lesson plans, and activities, prepare for the Geographic Bee, help kids learn about the world, and more.
+          <p>An efficient stock management depends upon accurate record 
 
-Classroom Resources
-School Publishing
-Locating Highest U.S. Elevations</p>
+keeping. Keeping records will save you time – you should know 
 
-        </div>
+the quantity in stock without counting. Proper inventory records 
+
+allow easy handover of the “store” to your colleague if you are 
+
+not at work. They also allow you to observe the pattern of 
+
+consumption</p> 
+<h3>Save you Time</h3>
+<br />
+<div class="imgtimer"><img src="images/laikradis.jpg"  alt="timer image"/></div>
+<div class="hometext">
+<p style="padding-top: 0;">Keeping records will protect you. You are protected against 
+
+accusations of theft. You can also keep track of deliveries when 
+
+they arrive, in case of disputes. Keeping records also prevents 
+
+over-stocking and under-stocking. This allows for estimation of 
+
+supplies for a year for budgeting purposes. 
+
+It is important to establish an accounting system that tracks 
+
+items that come in, items that are used, and items that are 
+
+remaining in the stock. Ideally, the number of a certain item 
+
+remaining in the stock should equal the number of the item that 
+
+came in minus the number used.</p>
+<p>This inventory tracking and management a huge time-suck for you 
+and the people you work with? Bad software makes it hard to do simple tasks, 
+collaborate with others, is frustrating to use, and difficult to learn and train 
+others to use.
+</p>
+
+        
+<p>To determine how much to re-order, you must establish the 
+
+proper full stock level. Re-order to reach that level. When 
+
+establishing the quantity of full stock, you should: 
+
+ Consider stock consumed, borrowed, expired, wasted, 
+
+pilferage 
+
+ Never order more than your storage space can hold 
+
+ Never order more supplies than you can use before they 
+
+are expired 
+
+ Consider maximum usage plus minimum stock level </p>
+</div>
+</div>
         </div>
         <div class="cl"></div>
        </div>
+
 <!--/content-->
 
 </div>
