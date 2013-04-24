@@ -26,7 +26,15 @@ p {margin:0; padding:15px 0; }
 fieldset {padding:0; border:none; border:0px solid #000; margin:0;}
 table {
     margin-left: 0px;
+<<<<<<< HEAD
     margin-right: 4px;
+=======
+<<<<<<< HEAD
+    margin-right: 4px;
+=======
+    margin-right: 0px;
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
     }
 textarea, input, select {font-family:Arial;}
 

@@ -65,12 +65,25 @@
 					</ul>
 				</div>
             </li>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
 			<li><a href="">Customers</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
                         <li><a href="AddNewCustomer.aspx">Add new Customer</a></li>
                         
+<<<<<<< HEAD
+=======
+=======
+			<li><a href="Home.aspx">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="../CustomersOrders.aspx">Customers' Orders</a></li>
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
 						
 					</ul>
 				</div>

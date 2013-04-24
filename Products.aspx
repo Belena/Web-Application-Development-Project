@@ -81,6 +81,11 @@
 	<div class="main_content">
 		<div class="content">
         
+<<<<<<< HEAD
+=======
+        <center> <h1>Products:</h1> </center>
+    
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
    
@@ -122,6 +127,7 @@
             </SelectParameters>
         </asp:AccessDataSource>
 
+<<<<<<< HEAD
    <center><asp:Label ID="LabelStatusText" runat="server" Text="All Products" 
            Font-Bold="True" Font-Size="X-Large"></asp:Label>
             <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
@@ -165,6 +171,55 @@
 
     <div style="width:100%; float:left;height:400px; overflow:auto; font-size: 13px; padding: 0 0 30px 0;">
     
+=======
+   <center><asp:Label ID="LabelStatusText" runat="server" Text="All Products"></asp:Label></center>
+    <br />
+    Select a product if you would like to edit or delete it
+
+            <br />
+            <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
+                DataFile="~/App_Data/Northwind.mdb" 
+                DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = ?" 
+                InsertCommand="INSERT INTO [Products] ([ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" 
+                SelectCommand="SELECT * FROM [Products]" 
+                UpdateCommand="UPDATE [Products] SET [ProductName] = ?, [SupplierID] = ?, [CategoryID] = ?, [QuantityPerUnit] = ?, [UnitPrice] = ?, [UnitsInStock] = ?, [UnitsOnOrder] = ?, [ReorderLevel] = ?, [Discontinued] = ? WHERE [ProductID] = ?">
+                <DeleteParameters>
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                    <asp:Parameter Name="ProductName" Type="String" />
+                    <asp:Parameter Name="SupplierID" Type="Int32" />
+                    <asp:Parameter Name="CategoryID" Type="Int32" />
+                    <asp:Parameter Name="QuantityPerUnit" Type="String" />
+                    <asp:Parameter Name="UnitPrice" Type="Decimal" />
+                    <asp:Parameter Name="UnitsInStock" Type="Int16" />
+                    <asp:Parameter Name="UnitsOnOrder" Type="Int16" />
+                    <asp:Parameter Name="ReorderLevel" Type="Int16" />
+                    <asp:Parameter Name="Discontinued" Type="Boolean" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="ProductName" Type="String" />
+                    <asp:Parameter Name="SupplierID" Type="Int32" />
+                    <asp:Parameter Name="CategoryID" Type="Int32" />
+                    <asp:Parameter Name="QuantityPerUnit" Type="String" />
+                    <asp:Parameter Name="UnitPrice" Type="Decimal" />
+                    <asp:Parameter Name="UnitsInStock" Type="Int16" />
+                    <asp:Parameter Name="UnitsOnOrder" Type="Int16" />
+                    <asp:Parameter Name="ReorderLevel" Type="Int16" />
+                    <asp:Parameter Name="Discontinued" Type="Boolean" />
+                    <asp:Parameter Name="ProductID" Type="Int32" />
+                </UpdateParameters>
+            </asp:AccessDataSource>
+
+    <br />
+<<<<<<< HEAD
+    <div style="width: 100%; font-size: 13px; padding: 0 0 40px 0;">
+=======
+    <div style="width: 100%; font-size: 14px; padding: 0 0 40px 0;">
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+    <hr />
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
         <asp:GridView 
         ID="ProductsGridView" 
         runat="server" 
