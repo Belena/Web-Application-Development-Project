@@ -93,7 +93,15 @@
 	<div class="main_content">
 		<div class="content">
         
+<<<<<<< HEAD
        <center><table style="width: 230px; padding-top:40px; margin:auto;">
+=======
+<<<<<<< HEAD
+       <center><table style="width: 230px; padding-top:40px; margin:auto;">
+=======
+       <center><table style="width: 60%; padding-top:40px;">
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
         <tr>
             <td>
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

@@ -129,7 +129,18 @@
         DataSourceID="SqlDataSource2"
         Width="70%">
         <Columns>
+<<<<<<< HEAD
             <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
             <asp:BoundField DataField="OrderID" HeaderText="OrderID" 
                 SortExpression="OrderID" />
             <asp:BoundField DataField="ProductID" HeaderText="ProductID" 
