@@ -6,6 +6,7 @@
 <head id="Head1" runat="server">
     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
+<<<<<<< HEAD
     
     <style type="text/css">
         .style1
@@ -14,6 +15,20 @@
         }
     </style>
     
+=======
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
 </head>
 <body class="main_body">
  <form id="form1" runat="server">
@@ -88,6 +103,16 @@
 		<div class="content">
     <div style="padding: 20px 10px">
     <h2>Manage Suppliers (Add new/Edit record/Delete record):</h2>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
     <center>
         <asp:FormView ID="FormView1" runat="server" AllowPaging="True" 
             DataKeyNames="SupplierID" DataSourceID="ObjectDataSource1" 
@@ -213,8 +238,12 @@
 
                 <tr>
                 <td>City:</td>
+<<<<<<< HEAD
                 <td class="style3"><asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' /></td><td>
                     &nbsp;</td>
+=======
+                <td class="style3"><asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' /></td><td></td>
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                 </tr>
 
                 <tr>
@@ -243,24 +272,43 @@
                 <tr>
                 <td>Phone:</td>
                 <td class="style3"><asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' /></td>
+<<<<<<< HEAD
                 <td>
+=======
+                <td><asp:RangeValidator ID="RangeValidator2" runat="server" 
+                    ControlToValidate="PhoneTextBox" ErrorMessage="phone should consist of 8 - 12 numbers" 
+                    MaximumValue="12" MinimumValue="8" SetFocusOnError="True" Type="Integer"></asp:RangeValidator>
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                </td>
                </tr>
                 
                 <tr>
+<<<<<<< HEAD
                 <td class="style1">Fax:</td>
                 <td class="style1"><asp:TextBox ID="FaxTextBox" runat="server" Text='<%# Bind("Fax") %>' /></td>
                     <td class="style1"></td>
+=======
+                <td>Fax:</td>
+                <td class="style3"><asp:TextBox ID="FaxTextBox" runat="server" Text='<%# Bind("Fax") %>' /></td><td></td>
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                 </tr>
                 
                 <tr>
                 <td>HomePage:</td>
                 <td class="style3"><asp:TextBox ID="HomePageTextBox" runat="server" 
                     Text='<%# Bind("HomePage") %>' /></td>
+<<<<<<< HEAD
                     <td>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
                             ErrorMessage=" enter url address" ControlToValidate="HomePageTextBox" 
                             ValidationExpression="([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"></asp:RegularExpressionValidator>
+=======
+                    <td><asp:RegularExpressionValidator ID="RegularExpressionValidator"
+                        runat="server" ErrorMessage="please, enter correct url " 
+                    ControlToValidate="HomePageTextBox" Enabled="True" SetFocusOnError="True" 
+                    Visible="True" ClientIDMode="Inherit" 
+                    ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"></asp:RegularExpressionValidator>
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                     </td>
                 </tr>
                 <caption>
@@ -276,6 +324,116 @@
                          </tr>
                     </caption>
                      </table>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        <asp:FormView ID="FormView1" runat="server" AllowPaging="True" 
+            DataKeyNames="SupplierID" DataSourceID="ObjectDataSource1" 
+            BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" 
+            CellPadding="4" ForeColor="Black" GridLines="Vertical" Width="753px">
+            <EditItemTemplate>
+                SupplierID:
+                <asp:Label ID="SupplierIDLabel1" runat="server" 
+                    Text='<%# Eval("SupplierID") %>' />
+                <br />
+                CompanyName:
+                <asp:TextBox ID="CompanyNameTextBox" runat="server" 
+                    Text='<%# Bind("CompanyName") %>' />
+                <br />
+                ContactName:
+                <asp:TextBox ID="ContactNameTextBox" runat="server" 
+                    Text='<%# Bind("ContactName") %>' />
+                <br />
+                ContactTitle:
+                <asp:TextBox ID="ContactTitleTextBox" runat="server" 
+                    Text='<%# Bind("ContactTitle") %>' />
+                <br />
+                Address:
+                <asp:TextBox ID="AddressTextBox" runat="server" Text='<%# Bind("Address") %>' />
+                <br />
+                City:
+                <asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' />
+                <br />
+                Region:
+                <asp:TextBox ID="RegionTextBox" runat="server" Text='<%# Bind("Region") %>' />
+                <br />
+                PostalCode:
+                <asp:TextBox ID="PostalCodeTextBox" runat="server" 
+                    Text='<%# Bind("PostalCode") %>' />
+                <br />
+                Country:
+                <asp:TextBox ID="CountryTextBox" runat="server" Text='<%# Bind("Country") %>' />
+                <br />
+                Phone:
+                <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
+                <br />
+                Fax:
+                <asp:TextBox ID="FaxTextBox" runat="server" Text='<%# Bind("Fax") %>' />
+                <br />
+                HomePage:
+                <asp:TextBox ID="HomePageTextBox" runat="server" 
+                    Text='<%# Bind("HomePage") %>' />
+                <br />
+
+                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" 
+                    CommandName="Update" Text="Update" />
+                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" 
+                    CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            </EditItemTemplate>
+            <EditRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+            <FooterStyle BackColor="#CCCC99" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+            <InsertItemTemplate>
+                CompanyName:
+                <asp:TextBox ID="CompanyNameTextBox" runat="server" 
+                    Text='<%# Bind("CompanyName") %>' />
+                <br />
+                ContactName:
+                <asp:TextBox ID="ContactNameTextBox" runat="server" 
+                    Text='<%# Bind("ContactName") %>' />
+                <br />
+                ContactTitle:
+                <asp:TextBox ID="ContactTitleTextBox" runat="server" 
+                    Text='<%# Bind("ContactTitle") %>' />
+                <br />
+                Address:
+                <asp:TextBox ID="AddressTextBox" runat="server" Text='<%# Bind("Address") %>' />
+                <br />
+                City:
+                <asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' />
+                <br />
+                Region:
+                <asp:TextBox ID="RegionTextBox" runat="server" Text='<%# Bind("Region") %>' />
+                <br />
+                PostalCode:
+                <asp:TextBox ID="PostalCodeTextBox" runat="server" 
+                    Text='<%# Bind("PostalCode") %>' />
+                <br />
+                Country:
+                <asp:TextBox ID="CountryTextBox" runat="server" Text='<%# Bind("Country") %>' />
+                <br />
+                Phone:
+                <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
+                <br />
+                Fax:
+                <asp:TextBox ID="FaxTextBox" runat="server" Text='<%# Bind("Fax") %>' />
+                <br />
+                HomePage:
+                <asp:TextBox ID="HomePageTextBox" runat="server" 
+                    Text='<%# Bind("HomePage") %>' />
+                <br />
+                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" 
+                    CommandName="Insert" Text="Insert" />
+                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" 
+                    CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
             </InsertItemTemplate>
             <ItemTemplate>
                 SupplierID:
@@ -312,14 +470,44 @@
                 <br />
                 Phone:
                 <asp:Label ID="PhoneLabel" runat="server" Text='<%# Bind("Phone") %>' />
+<<<<<<< HEAD
                 
+=======
+<<<<<<< HEAD
+                
+=======
+<<<<<<< HEAD
+                
+=======
+<<<<<<< HEAD
+                
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                 <br />
                 Fax:
                 <asp:Label ID="FaxLabel" runat="server" Text='<%# Bind("Fax") %>' />
                 <br />
                 HomePage:
                 <asp:Label ID="HomePageLabel" runat="server" Text='<%# Bind("HomePage") %>' />
+<<<<<<< HEAD
                
+=======
+<<<<<<< HEAD
+               
+=======
+<<<<<<< HEAD
+               
+=======
+<<<<<<< HEAD
+               
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
                 <br />
                  <hr />
                 <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" 
@@ -332,7 +520,22 @@
             <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
             <RowStyle BackColor="#F7F7DE" />
         </asp:FormView>
+<<<<<<< HEAD
         </center>
+=======
+<<<<<<< HEAD
+        </center>
+=======
+<<<<<<< HEAD
+        </center>
+=======
+<<<<<<< HEAD
+        </center>
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
             DeleteMethod="Delete" InsertMethod="Insert" 
             OldValuesParameterFormatString="original_{0}" SelectMethod="GetSuppliers" 
@@ -383,7 +586,22 @@
 <div class="footer">
 
 	<div class="footer_menu">
+<<<<<<< HEAD
 		<a href="#">Homenu">
+=======
+<<<<<<< HEAD
+		<a href="#">Homenu">
+=======
+<<<<<<< HEAD
+		<a href="#">Homenu">
+=======
+<<<<<<< HEAD
+		<a href="#">Homenu">
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
 		<a href="#">Home</a>       <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
 	<div class="copy">
 		&copy; NCI 2013 &nbsp;&nbsp; 

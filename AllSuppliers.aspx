@@ -41,7 +41,23 @@
     </div>
 <!--/top-->
 
+<<<<<<< HEAD
 <div class="container">
+=======
+<<<<<<< HEAD
+<div class="container">
+=======
+<<<<<<< HEAD
+<div class="container">
+=======
+<<<<<<< HEAD
+<div class="container" style="width: 100%;">
+=======
+<div class="container">
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
 <!--header-->
  <div class="cl"></div>
 	<div class="header">
@@ -77,6 +93,13 @@
 <!--content-->
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
 	<div class="main_content">
 		<div class="content">
 
@@ -89,6 +112,28 @@
             </asp:GridView>
 
         </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+	<div class="main_content" style="background: none;">
+		<div class="content">
+        
+        <asp:GridView ID="GridView1" runat="server" Width="100%">
+=======
+	<div class="main_content">
+		<div class="content">
+        
+        <asp:GridView ID="GridView1" runat="server" Width="753px">
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+        </asp:GridView>
+
+
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
         </div>
         </div>
         <div class="cl"></div>
