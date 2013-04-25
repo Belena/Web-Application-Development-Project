@@ -1,0 +1,20 @@
+<Record>
+  <Client>
+    <CompanyName>Company no 1</CompanyName>
+    <ContactName>John Smith</ContactName>
+    <Address>120 Marion Sq</Address>
+    <Phone>123456789</Phone>
+  </Client>
+  <Client>
+    <CompanyName>Best Company</CompanyName>
+    <ContactName>Mary Fitzpatrik</ContactName>
+    <Address>11 St.John's street</Address>
+    <Phone>222222222</Phone>
+  </Client>
+  <Client>
+    <CompanyName>Good Company</CompanyName>
+    <ContactName>Ben McCarthy</ContactName>
+    <Address>55 Willow Street</Address>
+    <Phone>321456666</Phone>
+  </Client>
+</Record>
