@@ -25,29 +25,42 @@
 	<div class="header">
 		
 		<ul class="main_menu">
-			<li class="active"><a href="../Home.aspx">Home</a></li>
-			<li><a href="#">About</a>
+			<li class="active"><a href="../Home.aspx">Home</a>
             <div class="sub_menu">
 					<ul>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="../ErrorHandler.aspx">error page test</a></li>
+						
 					</ul>
 				</div>
             </li>
-			<li><a href="#">Products</a>
+			
+			<li><a href="../Products.aspx">Products</a>
             <div class="sub_menu">
 					<ul>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
-						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href='../Stockxml.aspx'">Current Stock (xml)</a></li>
+                        <li><a href='../EditStock.aspx'">Manage Stock Items(xml)</a></li>
+						
 					</ul>
 				</div>
             </li>
-			<li><a href="#">Contacts</a></li>
-            
+            <li><a href="../AllSuppliers.aspx">Suppliers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="../EditSuppliers.aspx">Manage Supplisers</a></li>
+						
+					</ul>
+				</div>
+            </li>
+			<li><a href="../AddNewCustomer.aspx">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="../Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
+                        <li><a href="../TopClients.aspx">Our top clients</a></li>
+                        
+						
+					</ul>
+				</div>
+                </li>
 		</ul>
 	</div>
 <!--/header-->
@@ -80,7 +93,7 @@
 <div class="footer">
 
 	<div class="footer_menu">
-		<a href="#">Home   <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
+		<a href="Home.aspx">Home</a>       <a href="Products.aspx">Products</a>       <a href="AllSuppliers.aspx">Suppliers</a> <a href="AddNewCustomer.aspx">Customers</a>
 	<div class="copy">
 		&copy; NCI 2013 &nbsp;&nbsp; 
 	</div>
