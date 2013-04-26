@@ -111,8 +111,11 @@
 </script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
@@ -156,6 +159,7 @@
 	<div class="header">
 		
 		<ul class="main_menu">
+<<<<<<< HEAD
 			<li class="active"><a href="Home.aspx">Home</a>
             <div class="sub_menu">
 					<ul>
@@ -164,12 +168,18 @@
 					</ul>
 				</div>
             </li>
+=======
+			<li class="active"><a href="Home.aspx">Home</a></li>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 			
 			<li><a href="Products.aspx">Products</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href='Stockxml.aspx'">Current Stock (xml)</a></li>
+<<<<<<< HEAD
                         <li><a href='EditStock.aspx'">Manage Stock Items(xml)</a></li>
+=======
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 						
 					</ul>
 				</div>
@@ -177,16 +187,28 @@
             <li><a href="AllSuppliers.aspx">Suppliers</a>
             <div class="sub_menu">
 					<ul>
+<<<<<<< HEAD
 						<li><a href="EditSuppliers.aspx">Manage Supplisers</a></li>
+=======
+						<li><a href="dataentry.aspx">Edit Supplisers</a></li>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 						
 					</ul>
 				</div>
             </li>
+<<<<<<< HEAD
 			<li><a href="AddNewCustomer.aspx">Customers</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
                         <li><a href="TopClients.aspx">Our top clients</a></li>
+=======
+			<li><a href="">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
+                        <li><a href="AddNewCustomer.aspx">Add new Customer</a></li>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
                         
 						
 					</ul>
@@ -203,21 +225,41 @@
 	<div class="main_content">
 		<div class="content">
         <div style="width:100%; float:left;height:600px; overflow:auto;">
+<<<<<<< HEAD
         
             <center><h3>Add, Update, Delete stock itmes:</h3></center>
+=======
+        <p align="center">
+            <h3>Add, Edit, Update, Delete stock itmes:</h3>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
             <p>DataGrid &amp; XML DataSource</p>
             <br />
             <asp:Button id="btnAdd" onclick="btnAdd_Click" runat="server" Text="Add new row"></asp:Button>
             <br />
             <asp:DataGrid id="dgCatalog" runat="server" 
+<<<<<<< HEAD
             HorizontalAlign="Center" Font-Size="16px"  
+=======
+            ItemStyle-BackColor="" HorizontalAlign="Center" Font-Size="13px" 
+            CellPadding="3"  
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
             AutoGenerateColumns="False" OnCancelCommand="dgCatalog_CancelCommand" 
             OnDeleteCommand="dgCatalog_DeleteCommand" 
             OnEditCommand="dgCatalog_EditCommand" 
             OnUpdateCommand="dgCatalog_UpdateCommand" 
+<<<<<<< HEAD
             Width="100%" BorderColor="Gray" BorderWidth="1px">
                 
                
+=======
+            Width="100%">
+                
+               
+                <ItemStyle backcolor="#FFFFCC"></ItemStyle>
+                <HeaderStyle backcolor="" font-italic="False" font-strikeout="False" 
+                font-underline="False" font-overline="False" font-bold="True">
+                </HeaderStyle>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
                 <Columns>
                     <asp:BoundColumn DataField="ProductName" HeaderText="ProductName"></asp:BoundColumn>
                     <asp:BoundColumn DataField="CategoryID" HeaderText="CategoryID"></asp:BoundColumn>
@@ -228,10 +270,13 @@
                     <asp:EditCommandColumn CancelText="Cancel" UpdateText="Update" EditText="Edit"></asp:EditCommandColumn>
                     <asp:ButtonColumn CommandName="Delete" Text="Delete"></asp:ButtonColumn>
                 </Columns>
+<<<<<<< HEAD
                 <HeaderStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" 
                     Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" />
                 <ItemStyle Font-Bold="False" Font-Italic="False" Font-Overline="False" 
                     Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" />
+=======
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
             </asp:DataGrid>
       
         </div>
@@ -249,7 +294,11 @@
 <div class="footer">
 
 	<div class="footer_menu">
+<<<<<<< HEAD
 		<a href="Home.aspx">Home</a>       <a href="Products.aspx">Products</a>       <a href="AllSuppliers.aspx">Suppliers</a> <a href="AddNewCustomer.aspx">Customers</a>
+=======
+		<a href="#">Home</a>       <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 	<div class="copy">
 		&copy; NCI 2013 &nbsp;&nbsp; 
 	</div>

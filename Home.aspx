@@ -47,24 +47,49 @@
 	<div class="header">
 		
 		<ul class="main_menu">
+<<<<<<< HEAD
 			<li class="active"><a href="Home.aspx">Home</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href="ErrorHandler.aspx">error page test</a></li>
+=======
+			<li class="active"><a href="Home.aspx">Home</a></li>
+			
+			<li><a href="Products.aspx">Products</a>
+            <div class="sub_menu">
+					<ul>
+<<<<<<< HEAD
+						<li><a href='Stockxml.aspx'">Current Stock (xml)</a></li>
+=======
+<<<<<<< HEAD
+						<li><a href='Stockxml.aspx'">Current Stock (xml)</a></li>
+=======
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 						
 					</ul>
 				</div>
             </li>
+<<<<<<< HEAD
 			
 			<li><a href="Products.aspx">Products</a>
             <div class="sub_menu">
 					<ul>
 						<li><a href='Stockxml.aspx'">Current Stock (xml)</a></li>
                         <li><a href='EditStock.aspx'">Manage Stock Items(xml)</a></li>
+=======
+            <li><a href="AllSuppliers.aspx">Suppliers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="dataentry.aspx">Edit Supplisers</a></li>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 						
 					</ul>
 				</div>
             </li>
+<<<<<<< HEAD
             <li><a href="AllSuppliers.aspx">Suppliers</a>
             <div class="sub_menu">
 					<ul>
@@ -79,6 +104,41 @@
 						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
                         <li><a href="TopClients.aspx">Our top clients</a></li>
                         
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
+			<li><a href="">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="Member pages/CustomersOrders.aspx">Customers' Orders</a></li>
+                        <li><a href="AddNewCustomer.aspx">Add new Customer</a></li>
+<<<<<<< HEAD
+                        <li><a href="TopClients.aspx">Our top clients</a></li>
+                        
+=======
+                        
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+			<li><a href="Home.aspx">Customers</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="../CustomersOrders.aspx">Customers' Orders</a></li>
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 						
 					</ul>
 				</div>
@@ -94,7 +154,11 @@
 	<div class="main_content">
 		<div class="content">
         
+<<<<<<< HEAD
          <center><h2>Welcome to Inventory Manager!</h2></center>
+=======
+         <center><h2>Welcome to Inventory Manager Site!</h2></center>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 
 
           <p>An efficient stock management depends upon accurate record 
@@ -110,7 +174,11 @@ not at work. They also allow you to observe the pattern of
 consumption</p> 
 <h3>Save you Time</h3>
 <br />
+<<<<<<< HEAD
 <div class="imgtimer"><img src="images/penman.jpeg"  alt="timer image"/></div>
+=======
+<div class="imgtimer"><img src="images/laikradis.jpg"  alt="timer image"/></div>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 <div class="hometext">
 <p style="padding-top: 0;">Keeping records will protect you. You are protected against 
 

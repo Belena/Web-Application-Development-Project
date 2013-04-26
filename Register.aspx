@@ -7,7 +7,11 @@
 <head id="Head1" runat="server">
     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
+<<<<<<< HEAD
 </head>
+=======
+    </head>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 <body class="main_body">
  <form id="form1" runat="server">
 

@@ -2,11 +2,19 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<<<<<<< HEAD
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
+=======
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 </head>
 <body class="main_body">
  <form id="form1" runat="server">
@@ -28,7 +36,11 @@
 	       <asp:LoginView ID="LoginView1" runat="server">
                 <AnonymousTemplate>
                    <span style="font-size: 15px;"> You are not logged in</span>
+<<<<<<< HEAD
                    <div class="log"><a href="../Register.aspx">Register</a>
+=======
+                   <div class="log"><a href="Register.aspx">Register</a>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
         </div>
                 </AnonymousTemplate>
                 <LoggedInTemplate>
@@ -46,6 +58,7 @@
 	<div class="header">
 		
 		<ul class="main_menu">
+<<<<<<< HEAD
 			<li class="active"><a href="../Home.aspx">Home</a>
             <div class="sub_menu">
 					<ul>
@@ -82,6 +95,31 @@
 					</ul>
 				</div>
                 </li>
+=======
+			<li class="active"><a href="../Home.aspx">Home</a></li>
+			<li><a href="Home.aspx">About </a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+					</ul>
+				</div>
+            </li>
+			<li><a href="#">Products</a>
+            <div class="sub_menu">
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+						<li><a href="#">Lorem ipsum dolor sit ame</a></li>
+					</ul>
+				</div>
+            </li>
+			<li><a href="../Home.aspx">Contacts</a></li>
+            
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 		</ul>
 	</div>
     
@@ -142,7 +180,26 @@
         DataSourceID="SqlDataSource2"
         Width="70%">
         <Columns>
+<<<<<<< HEAD
             <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+<<<<<<< HEAD
+            <asp:CommandField ShowSelectButton="True" />
+=======
+>>>>>>> 876da39e625ef8e0edfffd5d0267e67ac9561862
+>>>>>>> 7a80d1e6388f2690c19cccf12367c12b95c63a43
+>>>>>>> 5babef656c925d51345aa95983e850e9bbaed808
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
             <asp:BoundField DataField="OrderID" HeaderText="OrderID" 
                 SortExpression="OrderID" />
             <asp:BoundField DataField="ProductID" HeaderText="ProductID" 
@@ -174,7 +231,11 @@
 <div class="footer">
 
 	<div class="footer_menu">
+<<<<<<< HEAD
 		<a href="Home.aspx">Home</a>       <a href="Products.aspx">Products</a>       <a href="AllSuppliers.aspx">Suppliers</a> <a href="AddNewCustomer.aspx">Customers</a>
+=======
+		<a href="#">Home</a>       <a href="#">About</a>       <a href="#">FAQ</a>       <a href="#">Contacts</a>
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
 	<div class="copy">
 		&copy; NCI 2013 &nbsp;&nbsp; 
 	</div>

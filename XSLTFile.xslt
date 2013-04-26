@@ -3,10 +3,17 @@
     <xsl:template match="/">
         <HTML>
             <BODY>
+<<<<<<< HEAD
                 <h2>Viewing Stock.xml:</h2>
                 <div style="width:100%; float:left;height:550px; overflow:auto; font-size: 16px;">
                 <TABLE cellspacing="3" cellpadding="8" width="100%" border-color="#636363">
                     <TR bgcolor="">
+=======
+                <h2>Current Stock:</h2>
+                <div style="width:100%; float:left;height:550px; overflow:auto;">
+                <TABLE cellspacing="3" cellpadding="8" width="100%;" >
+                    <TR bgcolor="#AAAAAA">
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
                         <TD class="heading">
                             <B>Product Name</B>
                         </TD>

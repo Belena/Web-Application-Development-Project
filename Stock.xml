@@ -8,7 +8,15 @@
     <UnitPrice>19</UnitPrice>
   </Products>
   <Products>
+<<<<<<< HEAD
     <ProductName>Aniseed soft drink</ProductName>
+=======
+<<<<<<< HEAD
+    <ProductName>Aniseed soft drink</ProductName>
+=======
+    <ProductName>Aniseed Syrup</ProductName>
+>>>>>>> 003ea30751263061869ca035e88690bf81da34c2
+>>>>>>> 62cb6a593f9528b5881a53bb61d4e6eaf7868189
     <CategoryID>2</CategoryID>
     <SupplierId>1</SupplierId>
     <UnitsInStock>13</UnitsInStock>
